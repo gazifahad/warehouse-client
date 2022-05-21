@@ -17,6 +17,7 @@ const Login = () => {
   const [password, setPassword] = useState();
   const [signInWithEmailAndPassword, googleUser, googleLoading, googleError] =
     useSignInWithEmailAndPassword(auth);
+    
 
   const [sendPasswordResetEmail, Rsending, Rerror] =
     useSendPasswordResetEmail(auth);
@@ -43,6 +44,7 @@ const Login = () => {
         </div>
     );
   }
+  
 
   return (
     <div className="min-vh-100">
@@ -76,7 +78,11 @@ const Login = () => {
           <Button variant="primary" type="submit">
             Login
           </Button>
-          <span className="ms-3">
+   {
+     googleError&&<p className="text-danger">Error: {googleError.message}</p>
+        
+   }
+            <span className="ms-3">
             <Link to="">
               <button
                 className="btn text-danger btn-link"
