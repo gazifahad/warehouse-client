@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AddItem from './Components/AddItem/AddItem';
+import Blogs from './Components/Blogs/Blogs';
 import Details from './Components/Details/Details';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
@@ -25,6 +26,7 @@ function App() {
         <Route path='/myitems' element={<ReqiureAuth><MyItems></MyItems></ReqiureAuth>}></Route>               
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signin' element={<SignUp></SignUp>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>      

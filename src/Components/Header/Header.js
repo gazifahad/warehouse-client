@@ -36,6 +36,7 @@ const Header = () => {
       <Nav.Link as={Link} to="/manageitems">Manage Items</Nav.Link>
     <Nav.Link as={Link} to="/additem">Add Item</Nav.Link>
     <Nav.Link as={Link} to="/myitems">My items</Nav.Link>
+    <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
       </Nav>
       <Nav className="ms-auto">    
     {user ? <span className="d-flex align-items-center"><span className="text-light">{user?.displayName}</span><Nav.Link onClick={logout}>Logout</Nav.Link></span>  :
