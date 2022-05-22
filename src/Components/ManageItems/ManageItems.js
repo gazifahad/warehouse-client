@@ -23,7 +23,7 @@ const ManageItems = () => {
 
   return (
     <div className="container">
-      <h2>Thiss is manage items {products?.length}</h2>
+      <h2>Items: {products?.length}</h2>
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {products.map((product) => (
           <ManageItem key={product._id} product={product} deleteItem={deleteItem}></ManageItem>

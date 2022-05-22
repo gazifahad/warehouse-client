@@ -34,7 +34,7 @@ const AddItem = () => {
   }
     return (
         <div className='container w-50'>
-            <h3>Welcome to add item</h3>
+            <h3>Add any fresh green item</h3>
             <Form onSubmit={handleOnSubmit}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Control type="text" name="name" placeholder="Item Name" autoFocus required/>

@@ -36,7 +36,7 @@ if (loading) {
   }
   return (
     <div>
-      <h1>welcome to my items {myItems?.length}</h1>
+      <h1>Number of Items Added by Me {myItems?.length}</h1>
 
       <div className="container">
         <Table responsive>
