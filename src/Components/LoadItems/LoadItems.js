@@ -18,7 +18,7 @@ const LoadItems = () => {
 
   return (
     <div className="container">
-      <h2>Thiss is manage items {products?.length}</h2>
+      <h2>All the items {products?.length}</h2>
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {products.map((product) => (
           <LoadItem key={product._id} product={product}></LoadItem>
