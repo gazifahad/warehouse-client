@@ -10,6 +10,7 @@ const Home = () => {
             <div>
                <h2>Our features</h2>
                <ul className='text-start'>
+                   <li>24*7 support system</li>
                    <li>100% authentic products</li>
                    <li>Green and fresh Items</li>
                    <li>Reliable and rechable at anytime</li>
