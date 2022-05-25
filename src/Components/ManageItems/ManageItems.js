@@ -7,15 +7,14 @@ const ManageItems = () => {
   const [products, setProducts] = useState([]);
  
   useEffect(() => {
-    axios.get("https://fierce-falls-28183.herokuapp.com/items")
+    axios.get("https://lit-plains-40003.herokuapp.com/items")
     .then((data) => setProducts(data.data));
   }, []);
 
   const deleteItem = id => {
       const newProducts = products.filter(item => item._id !== id);
       setProducts(newProducts);
-    axios
-      .delete(`https://fierce-falls-28183.herokuapp.com/item/${id}`)
+    axios.delete(`https://lit-plains-40003.herokuapp.com/item/${id}`)
       .then(() => console.log({ status: "Delete successful" }));
   };
 

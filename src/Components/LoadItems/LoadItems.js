@@ -9,7 +9,7 @@ const LoadItems = () => {
 
   useEffect(() => {
     axios
-      .get("https://fierce-falls-28183.herokuapp.com/items")
+      .get("https://lit-plains-40003.herokuapp.com/items")
       .then((data) => setLoadProducts(data.data));
     setProducts(loadProducts?.slice(0, 6));
   }, [loadProducts]);

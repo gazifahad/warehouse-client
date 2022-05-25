@@ -10,7 +10,7 @@ const Details = () => {
 
   useEffect(() => {
     axios
-      .get(`https://fierce-falls-28183.herokuapp.com/item/${id}`)
+      .get(`https://lit-plains-40003.herokuapp.com/item/${id}`)
       .then((data) => setItem(data.data));
   }, [updated]);
 
@@ -45,7 +45,7 @@ const Details = () => {
       };
       
         await axios
-          .put(`https://fierce-falls-28183.herokuapp.com/item/${id}`, updatedData)
+          .put(`https://lit-plains-40003.herokuapp.com/item/${id}`, updatedData)
           .then((data) => console.log('Quantity changed ',data.data));
           setUpdated(!updated);
     }
@@ -56,7 +56,7 @@ const Details = () => {
       <h2>Update Information</h2>
       <div className="d-flex justify-content-evenly align-items-center">
         <div>
-          <img src={item.img} alt="" />
+          <img className="img-fluid" src={item.img} alt="" />
         </div>
         <div className="text-start">
           <p>Product id : {id}</p>
